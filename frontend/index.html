@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomás — ML / AI Engineer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <span class="chip">Junior ML / AI Engineer · Portugal</span>
+        <h1>Tomás</h1>
+        <p class="lede">
+          MSc in Electrical and Computer Engineering (Control, Robotics, AI) at
+          Instituto Superior Técnico. Building applied ML systems — including this
+          site’s RAG chatbot.
+        </p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </header>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I look for Junior ML/AI Engineer roles in Portugal. My background sits
+          at the intersection of control, robotics and machine learning. This
+          portfolio is also a working demo: documents about my experience are
+          chunked, embedded, stored in FAISS and retrieved to answer questions.
+        </p>
+        <p class="note">
+          The knowledge base under <code>data/</code> still has placeholders for
+          internships and older projects. Replace them with real facts so the
+          assistant stays accurate.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article class="card">
+          <h3>Portfolio RAG assistant</h3>
+          <p>
+            FastAPI chat endpoint, Hugging Face sentence-transformers embeddings,
+            FAISS retrieval, LangChain chat model (Groq, with Ollama as a swap).
+            Dockerised. This is the live project on this site.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Predictive modelling</h3>
+          <p>Template — add a real dataset, model and metric in <code>data/projects/predictive-modeling.md</code>.</p>
+        </article>
+        <article class="card">
+          <h3>Robotics and control</h3>
+          <p>Template — add a lab or thesis prototype in <code>data/projects/robotics-control.md</code>.</p>
+        </article>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>PyTorch</li>
+          <li>Pandas</li>
+          <li>FastAPI</li>
+          <li>LangChain</li>
+          <li>Hugging Face</li>
+          <li>FAISS</li>
+          <li>Docker</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="chat-widget" id="chat-widget">
+      <div class="chat-header">
+        <span>Ask Tomás</span>
+        <button type="button" class="chat-toggle" id="chat-toggle" aria-label="Minimise chat">–</button>
+      </div>
+      <div class="chat-panel" id="chat-panel">
+        <div class="chat-body" id="chat-body">
+          <div class="message bot">
+            <p>Hi. Ask about education, projects, or skills. Answers come from the indexed documents, not from invented CV facts.</p>
+          </div>
+        </div>
+        <form class="chat-input-row" id="chat-form">
+          <input id="chat-input" class="chat-input" autocomplete="off" placeholder="Ask about my work..." />
+          <button type="submit" class="chat-send" id="chat-send">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer" aria-label="Site information footer">
+      <div class="footer-sash">
+        <span class="footer-version" id="site-version">v0.01</span>
+        <span class="footer-divider">/</span>
+        <span class="footer-copy">© <span id="site-year"></span> Tomás</span>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

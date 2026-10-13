@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.sqlite3
+.DS_Store
+node_modules/
+
+# Local editor, test, and tooling files
+.vscode/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# Generated model caches, vector indexes, and runtime data
+storage/*
+!storage/.gitkeep
+
+# Archives and private source documents should be reviewed separately
+*.zip
+*.tar
+*.tar.gz
+data/**/*.pdf
+
